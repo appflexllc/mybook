@@ -8,12 +8,22 @@ publish_mode: editorial_workflow
 media_folder: "uploads" 
 
 collections: 
- - name: "Main" # Used in routes, e.g., /admin/collections/blog 
+ - name: "main" # Used in routes, e.g., /admin/collections/blog 
    label: "android" # Used in the UI	
    folder: "android" # The path to the folder where the documents are stored
    create: true # Allow users to create new documents in this collection
    slug: "{{slug}}" # Filename template, e.g., title.md
    fields: # The fields for each document, usually in front matter
-    - {label: "Layout", name: "layout", widget: "hidden", default: "Main"}
+    - {label: "Layout", name: "layout", widget: "hidden", default: "main"}
     - {label: "Title", name: "title", widget: "string"}
+    - {label: "Body", name: "body", widget: "markdown"}
+ - name: "blog" # Used in routes, e.g., /admin/collections/blog 
+   label: "blog" # Used in the UI 
+   folder: "blog" # The path to the folder where the documents are stored 
+   create: true # Allow users to create new documents in this collection 
+   slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md 
+   fields: # The fields for each document, usually in front matter
+    - {label: "Layout", name: "layout", widget: "hidden", default: "main"}
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
     - {label: "Body", name: "body", widget: "markdown"}
