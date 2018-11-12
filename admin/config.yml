@@ -9,12 +9,12 @@ media_folder: "uploads"
 
 collections: 
  - name: "Main" # Used in routes, e.g., /admin/collections/blog 
-    label: "android" # Used in the UI	
-    folder: "android" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., title.md
-    fields: # The fields for each document, usually in front matter
-     - {label: "Layout", name: "layout", widget: "hidden", default: "Main"}
-     - {label: "Title", name: "title", widget: "string"}
-     - {label: "Featured Image", name: "thumbnail", widget: "image"}
-     - {label: "Body", name: "body", widget: "markdown"}
+   label: "android" # Used in the UI	
+   folder: "android" # The path to the folder where the documents are stored
+   create: true # Allow users to create new documents in this collection
+   slug: "{{slug}}" # Filename template, e.g., title.md
+   fields: # The fields for each document, usually in front matter
+    - {label: "Layout", name: "layout", widget: "hidden", default: "Main"}
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Featured Image", name: "thumbnail", widget: "image"}
+    - {label: "Body", name: "body", widget: "markdown"}
