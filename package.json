@@ -1,0 +1,22 @@
+{
+  "name": "afgitbook",
+  "version": "1.0.0",
+  "description": "my appflex",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "my",
+    "appflex",
+    "kw"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gitbook": "3.2.3"
+  },
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
+}
